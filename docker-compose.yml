@@ -1,0 +1,20 @@
+version: '3'
+
+services:
+  image-module:
+    build: ./
+    depends_on:
+      - 'database'
+    ports: 
+      - '3003:3003'    
+  database:
+    image: mongo:latest
+
+
+
+  # proxy-server:
+  #   build: ./
+  #   depends_on:
+  #     - 'image-module'
+  #   ports:
+  #     - '3000:3000'

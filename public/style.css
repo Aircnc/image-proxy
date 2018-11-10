@@ -14,18 +14,26 @@ html, body {
     width: 100%;
     height: auto;
     overflow: hidden;
+    margin-top: 10px;
+    /* border: 3px hotpink; */
 }
+
 #logoImg {
     max-width: 100%;
     max-height: 100%;
     margin: 10px;
 }
 
-#logo { grid-area: logo;}
+/* #logo { grid-area: logo;} */
 
-#search-bar {
+.search{
     grid-area: search;  
-    margin: 20px;
+    max-width: 600px;
+    overflow: hidden;
+}
+#search-bar {
+    /* margin-top: 20px;
+    margin-bottom: 20px; */
     transition: all 0.5s ease-in-out;
     box-shadow: 0.5px 0.85px 5px 1px rgb(187, 187, 187);
 }
@@ -48,7 +56,8 @@ html, body {
     height: 80px;
     display: grid;
     grid-template-areas:
-    'logo search search search search search  . . . . . . . . . . . . . . list1 list2 list3 list4 list5 list6';
+    'logo search search search search . . . . . . . . . . . . . . . list1 list2 list3 list4 list5 list6';
+    /* border : 3px solid orange; */
 }
 
 .rectangle {
@@ -60,7 +69,7 @@ html, body {
 
 .rectangle:hover { 
     cursor: pointer;
-    border-bottom: 10px solid black;
+    border-bottom: 2px solid black;
 }
 
 .nav-container > img {
@@ -68,14 +77,15 @@ html, body {
 }
 
 #logo {
-    width: 60px;
-    height: 60px;
+    /* width: 60px;
+    height: 60px; */
 }
 
 .content-container {
     margin-top: 30px;
     display: flex;
     justify-content: space-between;
+    /* border : 3px solid red; */
 }
 
 .circle {
@@ -94,6 +104,8 @@ html, body {
 .circle:hover {
     opacity: 1;
     transition: all 0.5s ease-in-out;
+    /* border : 3px solid blue; */
+
 }
 
 
@@ -102,6 +114,7 @@ html, body {
     display: flex;
     flex-direction: column;
     margin-left: 18%;
+    /* border : 3px solid yellow; */
 }
 
 #alice1 {
@@ -123,5 +136,6 @@ html, body {
     padding-top: 30px;
     margin-right: 20%;
     height: auto;
+    /* border : 3px solid pink; */
 }
 
